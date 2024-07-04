@@ -1,6 +1,5 @@
 import { NavBar } from "../NavBar/NavBar";
 import { RequestButton } from "../RequestButton/RequestButton";
-import "./Header.css";
 
 export function Header() {
   return (
