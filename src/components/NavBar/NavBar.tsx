@@ -1,6 +1,11 @@
-export function NavBar() {
+type NavBarProps = {
+  toggle: () => void;
+  isOpen: boolean;
+};
+
+export function NavBar({ isOpen, toggle }: NavBarProps) {
   return (
-    <nav>
+    <nav className={isOpen ? "active" : "inactive"}>
       <ul>
         <li>
           <a href="#">Home</a>
@@ -18,6 +23,9 @@ export function NavBar() {
           <a href="#">Careers</a>
         </li>
       </ul>
+      <button className="closeMenu" onClick={toggle}>
+        <img src="/icon-close.svg" alt="" />
+      </button>
     </nav>
   );
 }
