@@ -1,0 +1,45 @@
+.hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-left: 100px;
+    
+}
+
+.hero > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding-top: 20rem;
+   
+}
+
+.hero > div:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+
+    .contentImage {
+        position: relative;
+        left: 120px;
+        bottom: 120px;
+        z-index: -1;
+    }
+
+    .backgroundImage {
+        position: absolute;
+        z-index: -2;
+        top: -260px;
+        right: -450px;
+    }
+}
+.heroTitle {
+    color: var(--darkBlue);
+    font-size: 48px;
+}
+
+.heroText {
+    font-size: 18px;
+    color: var(--grayishBlue);
+    line-height: 1.4;
+}
