@@ -20,19 +20,18 @@
     justify-content: flex-end;
     overflow: hidden;
 
+    background-image: url("public/bg-intro-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 120px bottom 230px;
+
     .contentImage {
         position: relative;
         left: 120px;
         bottom: 120px;
-        z-index: -1;
+        z-index: 1;
     }
 
-    .backgroundImage {
-        position: relative;
-        z-index: -2;
-        top: -260px;
-        right: -450px;
-    }
 }
 .heroTitle {
     color: var(--darkBlue);
@@ -69,6 +68,10 @@
         justify-content: center;
         overflow: hidden;
         margin-bottom: calc(-255px + 5vw);
+        background-image: url("public/bg-intro-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top calc(-255px + 5vw) right 0;
         .contentImage {
             position: relative;
             max-width: 95%;
@@ -76,13 +79,7 @@
             top: calc(-255px + 5vw)
         }
 
-        .backgroundImage {
-            display: none;
-            position: absolute;
-            top: -250px;
-            left: -100px;
-        }
-    
+
         
     }
 }

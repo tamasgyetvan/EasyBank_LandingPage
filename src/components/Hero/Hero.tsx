@@ -15,7 +15,7 @@ export function Hero() {
       <div>
         <img
           className="contentImage"
-          src="/image-mockups.png"
+          src="/image-mockups copy.png"
           alt="Mobile Promo Image"
         />
       </div>
