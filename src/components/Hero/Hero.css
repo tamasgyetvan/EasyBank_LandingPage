@@ -2,7 +2,7 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding-left: 100px;
+    padding-left: 120px;
     
 }
 
@@ -18,6 +18,7 @@
 .hero > div:nth-child(2) {
     display: flex;
     justify-content: flex-end;
+    overflow: hidden;
 
     .contentImage {
         position: relative;
@@ -27,7 +28,7 @@
     }
 
     .backgroundImage {
-        position: absolute;
+        position: relative;
         z-index: -2;
         top: -260px;
         right: -450px;
@@ -42,4 +43,56 @@
     font-size: 18px;
     color: var(--grayishBlue);
     line-height: 1.4;
+}
+
+@media screen and (max-width: 1100px) {
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 0;
+
+    }
+
+    .hero > div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+        padding: 50px;
+       
+    }
+
+    .hero > div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: calc(-255px + 5vw);
+        .contentImage {
+            position: relative;
+            max-width: 95%;
+            left: 0;
+            top: calc(-255px + 5vw)
+        }
+
+        .backgroundImage {
+            display: none;
+            position: absolute;
+            top: -250px;
+            left: -100px;
+        }
+    
+        
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .hero > div:nth-child(2) {
+        margin-bottom: calc(-235px + 15vw);
+        .contentImage {
+            top: calc(-235px + 15vw)
+        }
+    }        
 }
