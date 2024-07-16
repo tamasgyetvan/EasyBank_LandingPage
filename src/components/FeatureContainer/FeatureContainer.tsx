@@ -14,7 +14,7 @@ export function FeatureContainer() {
         {data.map((data) => {
           return (
             <FeatureBox
-              id={data.id}
+              key={data.id}
               title={data.title}
               text={data.text}
               imageUrl={data.url}
