@@ -1,3 +1,6 @@
+import data from "../../data/features.json";
+import { FeatureBox } from "../FeatureBox/FeatureBox";
+
 export function FeatureContainer() {
   return (
     <section className="featureContainer">
@@ -7,6 +10,18 @@ export function FeatureContainer() {
         hub.
         <br /> Control your finances like never before.
       </p>
+      <div className="container">
+        {data.map((data) => {
+          return (
+            <FeatureBox
+              id={data.id}
+              title={data.title}
+              text={data.text}
+              imageUrl={data.url}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 }
