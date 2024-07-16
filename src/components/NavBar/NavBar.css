@@ -18,9 +18,10 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   nav {
     visibility: hidden;
+    z-index: 50;
   }
 
   nav.active {
@@ -50,5 +51,9 @@ a {
       top: 30px;
       right: 60px;
     }
+  }
+
+  nav.inactive {
+    position: absolute;
   }
 }

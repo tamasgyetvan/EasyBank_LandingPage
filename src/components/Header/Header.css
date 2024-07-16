@@ -2,8 +2,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 120px 20px 120px;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     gap: 50px;
     background-color: var(--white);
@@ -16,9 +15,9 @@ header {
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
     .mobileMenuButton {
-        display: block;
+        display: flex;
         background: none;
         border: none;
 
@@ -29,8 +28,8 @@ header {
 
     header {
         justify-content: space-between;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding: 20px 40px 20px 40px;
+
     }
 
     header > .requestButton {
