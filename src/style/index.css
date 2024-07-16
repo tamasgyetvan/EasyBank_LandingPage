@@ -4,4 +4,5 @@
 @import "../components/Header/Header.css";
 @import "../components/NavBar/NavBar.css";
 @import "../components/RequestButton/RequestButton.css";
-@import "../components/Hero/Hero.css"
+@import "../components/Hero/Hero.css";
+@import "../components/FeatureContainer/FeatureContainer.css"

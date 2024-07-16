@@ -1,0 +1,25 @@
+.featureContainer {
+    margin-top: -275px;
+    background-color: var(--veryLightGray);
+    padding: 120px 0px 120px 120px;
+}
+
+.title {
+    font-size: 40px;
+    color: var(--darkBlue);
+    padding-bottom: 30px;
+}
+
+.featureText {
+    font-size: 18px;
+  color: var(--grayishBlue);
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 1100px) {
+    .featureContainer {
+        margin-top: 0;
+        padding: 80px 20px 80px 20px;
+        text-align: center;
+    }
+}
