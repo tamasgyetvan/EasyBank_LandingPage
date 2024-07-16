@@ -1,7 +1,13 @@
 .featureContainer {
     margin-top: -275px;
     background-color: var(--veryLightGray);
-    padding: 120px 0px 120px 120px;
+    padding: 120px 120px 120px 120px;
+
+    .container {
+        display: flex;
+        margin-top: 40px;
+        gap: 40px;
+    }
 }
 
 .title {
@@ -16,10 +22,17 @@
   line-height: 1.4;
 }
 
+
 @media screen and (max-width: 1100px) {
     .featureContainer {
         margin-top: 0;
         padding: 80px 20px 80px 20px;
         text-align: center;
+
+        .container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

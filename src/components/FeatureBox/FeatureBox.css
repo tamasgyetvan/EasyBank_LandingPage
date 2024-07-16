@@ -1,0 +1,21 @@
+.promoSvg, .promoTitle {
+    margin-bottom: 20px;
+}
+
+.promoTitle {
+    font-size: 24px;
+    color: var(--darkBlue);
+
+}
+
+.promoText {
+    color: var(--grayishBlue);
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1100px) {
+    .featureBox {
+        width: 85%;
+    }
+}

@@ -6,9 +6,9 @@ type FeatureBoxProps = {
 export function FeatureBox({ title, text, imageUrl }: FeatureBoxProps) {
   return (
     <div className="featureBox">
-      <img src={imageUrl} alt="" />
-      <h3>{title}</h3>
-      <p>{text}</p>
+      <img className="promoSvg" src={imageUrl} alt="" />
+      <h3 className="promoTitle">{title}</h3>
+      <p className="promoText">{text}</p>
     </div>
   );
 }
