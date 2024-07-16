@@ -16,7 +16,12 @@ export function Hero() {
         <img
           className="contentImage"
           src="/image-mockups copy.png"
-          alt="Mobile Promo Image"
+          alt="Hero Promo Image"
+        />
+        <img
+          className="backgroundImage"
+          src="/bg-intro-desktop.svg"
+          alt="Hero Background Image"
         />
       </div>
     </section>

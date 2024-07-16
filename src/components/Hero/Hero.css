@@ -1,95 +1,106 @@
 .hero {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding-left: 120px;
-    
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-left: 120px;
 }
 
 .hero > div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-    padding-top: 20rem;
-   
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  padding-top: 20rem;
 }
 
 .hero > div:nth-child(2) {
-    display: flex;
-    justify-content: flex-end;
-    overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
 
-    background-image: url("public/bg-intro-desktop.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left 120px bottom 230px;
+  .backgroundImage {
+    z-index: -5;
+    position: absolute;
+    right: -420px;
+    bottom: 150px;
+    max-width: 100%;
+  }
 
-    .contentImage {
-        position: relative;
-        left: 120px;
-        bottom: 120px;
-        z-index: 1;
-    }
-
+  .contentImage {
+    position: relative;
+    left: 120px;
+    bottom: 120px;
+  }
 }
+
 .heroTitle {
-    color: var(--darkBlue);
-    font-size: 48px;
+  color: var(--darkBlue);
+  font-size: 48px;
 }
 
 .heroText {
-    font-size: 18px;
-    color: var(--grayishBlue);
-    line-height: 1.4;
+  font-size: 18px;
+  color: var(--grayishBlue);
+  line-height: 1.4;
 }
 
 @media screen and (max-width: 1100px) {
-    .hero {
-        display: flex;
-        flex-direction: column-reverse;
-        padding-left: 0;
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 0;
+  }
 
+  .hero > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .hero > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -275px; 
+    padding: 0px 20px 0px 20px;
+
+    .contentImage {
+      position: relative;
+      max-width: 100%;
+      left: 0;
+      top: -275px;
     }
 
-    .hero > div:nth-child(1) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        text-align: center;
-        padding: 50px;
-       
+    .backgroundImage {
+      top: -140px;
+      left: 0;
+      right: 0;
     }
+  }
 
-    .hero > div:nth-child(2) {
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-        margin-bottom: calc(-255px + 5vw);
-        background-image: url("public/bg-intro-mobile.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top calc(-255px + 5vw) right 0;
-        .contentImage {
-            position: relative;
-            max-width: 95%;
-            left: 0;
-            top: calc(-255px + 5vw)
-        }
-
-
-        
-    }
+  .heroTitle {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 550px) {
+  .hero > div:nth-child(2) {
+    margin-bottom: -130px;
+    .contentImage {
+      top: -130px;
+    }
+  }
+  .backgroundImage {
+    top: 0;
+  }
+}
 
-    .hero > div:nth-child(2) {
-        margin-bottom: calc(-235px + 15vw);
-        .contentImage {
-            top: calc(-235px + 15vw)
-        }
-    }        
+@media screen and (max-width: 375px) {
+  .backgroundImage {
+    top: -100px;
+    content: url("/public/bg-intro-mobile.svg");
+  }
 }
