@@ -6,4 +6,6 @@
 @import "../components/RequestButton/RequestButton.css";
 @import "../components/Hero/Hero.css";
 @import "../components/FeatureContainer/FeatureContainer.css";
-@import "../components/FeatureBox/FeatureBox.css"
+@import "../components/FeatureBox/FeatureBox.css";
+@import "../components/ArticleContainer/ArticleContainer.css";
+@import "../components/ArticleBox/ArticleBox.css";
