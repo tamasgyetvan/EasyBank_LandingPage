@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding-left: 120px;
+  overflow: hidden;
 }
 
 .hero > div:nth-child(1) {
