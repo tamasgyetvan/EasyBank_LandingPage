@@ -6,12 +6,18 @@
     background-color: white;
     width: 300px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
     > img {
         object-fit: cover;
         width: 300px;
         height: 300px;
         border-radius: 10px 10px 0px 0px;
         
+    }
+
+    &:hover {
+        transform: scale(1.025);
     }
 
     .articleAuthor {
