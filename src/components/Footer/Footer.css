@@ -1,0 +1,32 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 120px 60px 120px;
+  gap: 10rem;
+  background-color: var(--darkBlue);
+}
+
+
+.column:nth-of-type(4) {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    span {
+        color: white;
+    }
+}
+
+.column > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  li > a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+}
