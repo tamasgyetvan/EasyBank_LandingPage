@@ -9,7 +9,7 @@ export function Header() {
   }
   return (
     <header>
-      <img src="public/logo.svg" alt="EveryBank Logo" />
+      <img src="/logo.svg" alt="EveryBank Logo" />
       <NavBar toggle={toggleMenu} isOpen={isOpen} />
       <RequestButton />
       <button className="mobileMenuButton" onClick={toggleMenu}>
