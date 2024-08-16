@@ -1,18 +1,22 @@
-ul {
-  display: flex;
-  gap: calc(2rem + 3vw);
-}
-
-a {
-  color: var(--grayishBlue);
-  text-decoration: none;
-  font-size: 1.6rem;
+nav {
+  ul {
+    display: flex;
+    gap: calc(2rem + 3vw);
+  }
   
-  &:hover {
-    border-bottom: 3px solid;
-    border-image: linear-gradient(45deg, var(--limeGreen), var(--brightCyan)) 1;
+  a {
+    color: var(--grayishBlue);
+    text-decoration: none;
+    font-size: 1.6rem;
+    
+    &:hover {
+      border-bottom: 3px solid;
+      border-image: linear-gradient(45deg, var(--limeGreen), var(--brightCyan)) 1;
+    }
   }
 }
+
+
 
 .closeMenu {
   display: none;
