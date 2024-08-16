@@ -9,11 +9,11 @@ export function Header() {
   }
   return (
     <header>
-      <img src="/logo.svg" alt="EveryBank Logo" />
+      <img src="./logo.svg" alt="EveryBank Logo" />
       <NavBar toggle={toggleMenu} isOpen={isOpen} />
       <RequestButton />
       <button className="mobileMenuButton" onClick={toggleMenu}>
-        <img src="/icon-hamburger.svg" alt="" />
+        <img src="./icon-hamburger.svg" alt="" />
       </button>
     </header>
   );

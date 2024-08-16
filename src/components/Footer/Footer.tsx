@@ -4,13 +4,13 @@ export function Footer() {
   return (
     <footer>
       <div className="column">
-        <img className="footerLogo" src="/logo_white.svg" alt="" />
+        <img className="footerLogo" src="./logo_white.svg" alt="" />
         <div className="iconContainer">
-          <img className="socialIcon" src="/icon-facebook.svg" alt="" />
-          <img className="socialIcon" src="/icon-youtube.svg" alt="" />
-          <img className="socialIcon" src="/icon-twitter.svg" alt="" />
-          <img className="socialIcon" src="/icon-pinterest.svg" alt="" />
-          <img className="socialIcon" src="/icon-instagram.svg" alt="" />
+          <img className="socialIcon" src="./icon-facebook.svg" alt="" />
+          <img className="socialIcon" src="./icon-youtube.svg" alt="" />
+          <img className="socialIcon" src="./icon-twitter.svg" alt="" />
+          <img className="socialIcon" src="./icon-pinterest.svg" alt="" />
+          <img className="socialIcon" src="./icon-instagram.svg" alt="" />
         </div>
       </div>
       <div className="column">
