@@ -5,7 +5,13 @@ export function Footer() {
     <footer>
       <div className="column">
         <img className="footerLogo" src="public/logo_white.svg" alt="" />
-        <div className="iconContainer"></div>
+        <div className="iconContainer">
+          <img className="socialIcon" src="public/icon-facebook.svg" alt="" />
+          <img className="socialIcon" src="public/icon-youtube.svg" alt="" />
+          <img className="socialIcon" src="public/icon-twitter.svg" alt="" />
+          <img className="socialIcon" src="public/icon-pinterest.svg" alt="" />
+          <img className="socialIcon" src="public/icon-instagram.svg" alt="" />
+        </div>
       </div>
       <div className="column">
         <ul>
