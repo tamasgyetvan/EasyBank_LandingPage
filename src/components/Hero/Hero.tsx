@@ -15,12 +15,12 @@ export function Hero() {
       <div>
         <img
           className="contentImage"
-          src="/image-mockups copy.png"
+          src="public/image-mockups copy.png"
           alt="Hero Promo Image"
         />
         <img
           className="backgroundImage"
-          src="/bg-intro-desktop.svg"
+          src="public/bg-intro-desktop.svg"
           alt="Hero Background Image"
         />
       </div>
