@@ -3,23 +3,20 @@ nav {
     display: flex;
     gap: calc(2rem + 3vw);
   }
-  
+  .closeMenu {
+    display: none;
+  }
   a {
     color: var(--grayishBlue);
     text-decoration: none;
     font-size: 1.6rem;
-    
+
     &:hover {
       border-bottom: 3px solid;
-      border-image: linear-gradient(45deg, var(--limeGreen), var(--brightCyan)) 1;
+      border-image: linear-gradient(45deg, var(--limeGreen), var(--brightCyan))
+        1;
     }
   }
-}
-
-
-
-.closeMenu {
-  display: none;
 }
 
 @media screen and (max-width: 1150px) {
@@ -52,8 +49,12 @@ nav {
       background: none;
       border: none;
       position: absolute;
-      top: 30px;
-      right: 60px;
+      top: 20px;
+      right: 43.5px;
+
+      img {
+        width: 20px;
+      }
     }
   }
 

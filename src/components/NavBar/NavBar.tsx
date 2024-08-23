@@ -24,7 +24,7 @@ export function NavBar({ isOpen, toggle }: NavBarProps) {
         </li>
       </ul>
       <button className="closeMenu" onClick={toggle}>
-        <img src="./icon-close.svg" alt="" />
+        <img src="./icon-close.svg" alt="Menu Close Button" />
       </button>
     </nav>
   );

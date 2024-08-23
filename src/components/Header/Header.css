@@ -1,38 +1,33 @@
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 120px 20px 120px;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    gap: 50px;
-    background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 120px 20px 120px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  background-color: var(--white);
 }
-
 
 .mobileMenuButton {
-    display: none;
+  display: none;
 }
 
-
-
 @media screen and (max-width: 1150px) {
-    .mobileMenuButton {
-        display: flex;
-        background: none;
-        border: none;
+  header {
+    justify-content: space-between;
+    padding: 20px 40px 20px 40px;
 
-        img {
-            width: 30px;
-        }
+    .requestButton {
+      display: none;
     }
+  }
+  .mobileMenuButton {
+    display: flex;
+    background: none;
+    border: none;
 
-    header {
-        justify-content: space-between;
-        padding: 20px 40px 20px 40px;
-
+    img {
+      width: 30px;
     }
-
-    header > .requestButton {
-        display: none;
-    }
+  }
 }
