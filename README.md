@@ -1,5 +1,5 @@
 EasyBank Frontendmentor Challenge
 
 
-[Live website](https://tamasgyetvan.github.io/EasyBankApp/)
+[Live website](https://tamasgyetvan.github.io/EasyBank_LandingPage/)
 
